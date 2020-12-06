@@ -87,6 +87,20 @@ hr {
     width: 100%;
 }
 
+.history {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+}
+
+.history h2 {
+    text-align: center;
+}
+
+.history p{
+    text-align: left;
+}
     
 
 
@@ -137,4 +151,18 @@ hr {
         height: auto;
     }
 
+    .history{
+        display: flex;
+        justify-content: center;
+        max-width: 50%;
+        
+    }
+
+    .history p {
+        display: flex;
+        text-align: left;
+        justify-content: center;
+    }
+
 }
+
