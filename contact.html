@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alex McCaffrey</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="title-link"><h1>Alex McCaffrey</h1></a>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+
+    <h2> Don't Hesistate to Reach Out!</h2>
+
+    <div class="contact">
+        <form
+          action="https://formspree.io/f/mzbkgaad"
+          method="POST">
+            <label>
+              Name:
+              <input type="text" name="name" required>
+            </label>
+          <label>
+            Your email:
+            <input type="text" name="_replyto" required>
+          </label>
+        <br>
+          <label id='message'>
+            Your message:
+            <textarea name="message" required></textarea>
+          </label>
+
+          <!-- your other form fields go here -->
+
+          <button type="submit">Send</button>
+        </form>
+    </div>
+
+<hr>
+    <section class="weather">
+        <h3>Local Weather in Devnver, CO</h3>
+        <div class="weather-results">
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&#169; Alex McCaffrey</p>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
 
+  main {
+    min-height: 100%;
+    width: 100%;
+}
+
 body {
     background-color: #fff1e6; 
     margin:0 auto;
@@ -75,13 +80,29 @@ nav li {
 
 hr {
     height: 15px;
-    max-width: 75%;
+    max-width: 85%;
     background: #b7b7a4;
 }
 
 
 
+
+
+
+
+
+
 /* About Me Page */
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 .mountain {
     width: 100%;
@@ -90,21 +111,106 @@ hr {
 .history {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 }
 
 .history h2 {
+    justify-content: center;
     text-align: center;
 }
 
 .history p{
-    text-align: left;
+    justify-content: center;
+    text-align: center;
+}
+
+.industries {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* Projects Page */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery .item {
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #b7b7a4;
+    margin: 0;
+    padding: 0;
+   }
+
+
+footer p {
+    text-align: center;
+}
+
+
+
+/* Contact */ 
+
+.contact input{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact textarea{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
 }
     
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea[name="message"] {
+    width: 300px;
+    height: 100px;
+  }
+
+ 
+
+
+
 
 
 @media all and (min-width: 600px){
+
+   
+    
 
     header {
         padding-bottom: 10px;
@@ -164,5 +270,39 @@ hr {
         justify-content: center;
     }
 
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    .gallery img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .gallery .item {
+       flex-basis: 100%;
+       text-align: center;
+       margin: 10px;
+    }
+
+    .weather {
+        order: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+    }
 }
 
